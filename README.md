@@ -53,10 +53,6 @@ Contributions are welcome! To contribute:
 2. Create a branch for your feature/bugfix.
 3. Submit a pull request with a detailed description of your changes.
 
-## License
-
-This project is licensed under the MIT License. See [LICENSE](./LICENSE) for more details.
-
 ## Acknowledgments
 
 - Inspired by the creativity of language design and the power of C++.
