@@ -1,0 +1,21 @@
+D:\Desktop\compiler_project\compiler_gui\compiler_gui\x64\Debug\compiler_gui.vcxproj.AssemblyReference.cache
+D:\Desktop\compiler_project\compiler_gui\compiler_gui\x64\Debug\compilergui.MainForm.resources
+D:\Desktop\compiler_project\compiler_gui\compiler_gui\x64\Debug\compiler_gui.vcxproj.GenerateResource.cache
+D:\Study\BFCAI 4_2(CS)\3-Compiler\Sec\Project\compiler_gui\compiler_gui\x64\Debug\compiler_gui.vcxproj.AssemblyReference.cache
+D:\Study\BFCAI 4_2(CS)\3-Compiler\Sec\Project\compiler_gui\compiler_gui\x64\Debug\compilergui.MainForm.resources
+D:\Study\BFCAI 4_2(CS)\3-Compiler\Sec\Project\compiler_gui\compiler_gui\x64\Debug\compiler_gui.vcxproj.GenerateResource.cache
+D:\Desktop\compiler_gui\compiler_gui\compiler_gui\x64\Debug\compiler_gui.vcxproj.AssemblyReference.cache
+D:\Desktop\compiler_gui\compiler_gui\compiler_gui\x64\Debug\compilergui.MainForm.resources
+D:\Desktop\compiler_gui\compiler_gui\compiler_gui\x64\Debug\compiler_gui.vcxproj.GenerateResource.cache
+D:\Study\BFCAI 4_2(CS)\3-Compiler\Sec\P2\compiler_gui\compiler_gui\compiler_gui\x64\Debug\compiler_gui.vcxproj.AssemblyReference.cache
+D:\Study\BFCAI 4_2(CS)\3-Compiler\Sec\P2\compiler_gui\compiler_gui\compiler_gui\x64\Debug\compilergui.MainForm.resources
+D:\Study\BFCAI 4_2(CS)\3-Compiler\Sec\P2\compiler_gui\compiler_gui\compiler_gui\x64\Debug\compiler_gui.vcxproj.GenerateResource.cache
+D:\Study\BFCAI 4_2(CS)\3-Compiler\Sec\PROJECT2\compiler_gui\compiler_gui\compiler_gui\x64\Debug\compiler_gui.vcxproj.AssemblyReference.cache
+D:\Study\BFCAI 4_2(CS)\3-Compiler\Sec\PROJECT2\compiler_gui\compiler_gui\compiler_gui\x64\Debug\compilergui.MainForm.resources
+D:\Study\BFCAI 4_2(CS)\3-Compiler\Sec\PROJECT2\compiler_gui\compiler_gui\compiler_gui\x64\Debug\compiler_gui.vcxproj.GenerateResource.cache
+D:\Study\BFCAI 4_2(CS)\3-Compiler\Sec\Part2\compiler_gui\compiler_gui\compiler_gui\x64\Debug\compiler_gui.vcxproj.AssemblyReference.cache
+D:\Study\BFCAI 4_2(CS)\3-Compiler\Sec\Part2\compiler_gui\compiler_gui\compiler_gui\x64\Debug\compilergui.MainForm.resources
+D:\Study\BFCAI 4_2(CS)\3-Compiler\Sec\Part2\compiler_gui\compiler_gui\compiler_gui\x64\Debug\compiler_gui.vcxproj.GenerateResource.cache
+E:\compiler_gui(1)\compiler_gui\compiler_gui\compiler_gui\x64\Debug\compiler_gui.vcxproj.AssemblyReference.cache
+E:\compiler_gui(1)\compiler_gui\compiler_gui\compiler_gui\x64\Debug\compilergui.MainForm.resources
+E:\compiler_gui(1)\compiler_gui\compiler_gui\compiler_gui\x64\Debug\compiler_gui.vcxproj.GenerateResource.cache
