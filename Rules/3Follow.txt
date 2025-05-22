@@ -1,0 +1,44 @@
+FOLLOW(<program>)            = { $ }
+
+FOLLOW(<stmt_list>)          = { end, until, else, $ }
+
+FOLLOW(<stmt_list_tail>)     = FOLLOW(<stmt_list>) = { end, until, else, $ }
+
+FOLLOW(<stmt>)               = FOLLOW(<stmt_list_tail>) = { end, until, else, $ }
+
+FOLLOW(<if_stmt>)            = { ; }
+
+FOLLOW(<repeat_stmt>)        = { ; }
+
+FOLLOW(<assign_stmt>)        = { ; }
+
+FOLLOW(<read_stmt>)          = { ; }
+
+FOLLOW(<write_stmt>)         = { ; }
+
+FOLLOW(<write_stmt_tail>)    = FOLLOW(<write_stmt>) = { ; }
+
+FOLLOW(<declare_stmt>)       = { ; }
+
+FOLLOW(<else_part>)          = { end }
+
+FOLLOW(<exp>)                = { then, ;, ), <, = }
+
+FOLLOW(<exp_tail>)           = FOLLOW(<exp>) = { then, ;, ) }
+
+FOLLOW(<simple_exp>)         = FIRST(<exp_tail>) ∪ FOLLOW(<exp>)
+                             = { =, <, then, ;, ) }
+
+FOLLOW(<comparison_op>)      = FIRST(<simple_exp>) = { (, NUMBER, IDENTIFIER }
+
+FOLLOW(<add_op_term_list>)   = FOLLOW(<simple_exp>) = { =, <, then, ;, ) }
+
+FOLLOW(<add_op>)             = FIRST(<term>) = { (, NUMBER, IDENTIFIER }
+
+FOLLOW(<term>)               = FIRST(<add_op_term_list>) = { +, -, ε }
+
+FOLLOW(<mul_op_factor_list>) = FOLLOW(<term>) = { +, -, ;, =, <, ), then }
+
+FOLLOW(<mul_op>)             = FIRST(<factor>) = { (, NUMBER, IDENTIFIER }
+
+FOLLOW(<factor>)             = FOLLOW(<mul_op_factor_list>) = { *, /, +, -, ;, ), =, <, then }

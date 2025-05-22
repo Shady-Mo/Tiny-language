@@ -1,0 +1,43 @@
+FIRST(<program>)            = FIRST(<stmt_list>) = { if, repeat, IDENTIFIER, read, write, int }
+
+FIRST(<stmt_list>)          = { if, repeat, IDENTIFIER, read, write, int }
+
+FIRST(<stmt_list_tail>)     = { if, repeat, IDENTIFIER, read, write, int, ε }
+
+FIRST(<stmt>)               = { if, repeat, IDENTIFIER, read, write, int }
+
+FIRST(<if_stmt>)            = { if }
+
+FIRST(<repeat_stmt>)        = { repeat }
+
+FIRST(<assign_stmt>)        = { IDENTIFIER }
+
+FIRST(<read_stmt>)          = { read }
+
+FIRST(<write_stmt>)         = { write }
+
+FIRST(<write_stmt_tail>)    = FIRST(<exp>) ∪ FIRST(<STRING>) = { (, NUMBER, IDENTIFIER, STRING }
+
+FIRST(<declare_stmt>)       = { int }
+
+FIRST(<else_part>)          = { else, ε }
+
+FIRST(<exp>)                = FIRST(<simple_exp>) = { (, NUMBER, IDENTIFIER }
+
+FIRST(<exp_tail>)           = { =, <, ε }
+
+FIRST(<comparison_op>)      = { =, < }
+
+FIRST(<simple_exp>)         = FIRST(<term>) = { (, NUMBER, IDENTIFIER }
+
+FIRST(<add_op_term_list>)   = { +, -, ε }
+
+FIRST(<add_op>)             = { +, - }
+
+FIRST(<term>)               = FIRST(<factor>) = { (, NUMBER, IDENTIFIER }
+
+FIRST(<mul_op_factor_list>) = { *, /, ε }
+
+FIRST(<mul_op>)             = { *, / }
+
+FIRST(<factor>)             = { (, NUMBER, IDENTIFIER }

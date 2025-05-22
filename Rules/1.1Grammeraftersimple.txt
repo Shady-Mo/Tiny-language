@@ -1,0 +1,50 @@
+<program>           ==> <stmt_list>
+
+<stmt_list>         ==> <stmt> <stmt_list_tail>
+<stmt_list_tail>    ==> <stmt> <stmt_list_tail> | ε
+
+<stmt>              ==> <if_stmt>
+                      | <repeat_stmt>
+                      | <assign_stmt> ;
+                      | <read_stmt> ;
+                      | <write_stmt> ;
+                      | <declare_stmt> ;
+
+<if_stmt>           ==> if <exp> then <stmt_list> <else_part> end
+
+<else_part>         ==> else <stmt_list> | ε
+
+<repeat_stmt>       ==> repeat <stmt_list> until <exp> ;
+
+<assign_stmt>       ==> IDENTIFIER := <exp>
+
+<read_stmt>         ==>read IDENTIFIER
+---------------------------------------------------------------
+<write_stmt> → write <write_stmt_tail>
+<write_stmt_tail> → <exp> | <STRING>
+---------------------------------------------------------------
+
+<STRING>     ==>      “[ a-z | A-Z | 0-9 | ! | @ | # | $ | ^ | & | ~ | ?]*“
+
+<declare_stmt>      ==> int IDENTIFIER
+--------------------------------------------------------------
+<exp> → <simple_exp> <exp_tail>
+<exp_tail> → <comparison_op> <simple_exp> | ε
+---------------------------------------------------------------
+<comparison_op>     ==> = | <
+
+<simple_exp>        ==> <term> <add_op_term_list>
+<add_op_term_list>  ==> <add_op> <term> <add_op_term_list> | ε
+
+<add_op>            ==> + | -
+
+<term>              ==> <factor> <mul_op_factor_list>
+<mul_op_factor_list>==> <mul_op> <factor> <mul_op_factor_list> | ε
+
+<mul_op>            ==> * | /
+
+<factor>            ==> ( <exp> )
+                      | <NUMBER>
+                      | <IDENTIFIER>
+<NUMBER>      ==>    [0-9][0-9]*   
+<IDENTIFIER>  ==>    [ a-z | A-Z ] [ a-z | A-Z | 0-9]* 
